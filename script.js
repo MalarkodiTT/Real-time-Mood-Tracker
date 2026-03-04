@@ -40,7 +40,7 @@ video.addEventListener('play', () => {
 // Mood-ah backend-ku anuppura function
 async function saveMoodToDB(currentMood) {
     try {
-        await fetch('http://localhost:5000/save-mood', {
+        await fetch('https://real-time-mood-tracker.onrender.com/save-mood', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ emotion: currentMood })
@@ -52,7 +52,7 @@ async function saveMoodToDB(currentMood) {
 }
 async function saveMoodToDB(moodName) {
     try {
-        const response = await fetch('http://localhost:5000/save-mood', {
+        const response = await fetch('https://real-time-mood-tracker.onrender.com/save-mood', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ emotion: moodName })
