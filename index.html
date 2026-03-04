@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Mood Tracker</h1>
+        <div class="video-container">
+            <video id="video" width="600" height="450" autoplay muted></video>
+            <canvas id="overlay"></canvas>
+        </div>
+        <div class="status-panel">
+            <p>Current Mood: <span id="mood-display">Detecting...</span></p>
+        </div>
+    </div>
+</body>
+</html>
